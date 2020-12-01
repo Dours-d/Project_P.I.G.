@@ -1,0 +1,404 @@
+.one{
+	display:flex;
+	align-items: flex-start;
+}
+
+.center{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+}
+
+#body{
+	width: 53rem;
+	height: 39rem;
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	top: -13rem;
+	left:-17.5rem;
+	
+	transform: scale(0.45, 0.45);
+	margin: 0em;
+  align-items: flex-start;
+}
+
+.pig {
+  position: absolute;
+  width: 53rem;
+  height: 39rem;
+  background-color: #fcb72b;
+  background-image: linear-gradient(10deg, #fe551a 50%, transparent 50%), linear-gradient(-60deg, #bc2f40 30%, transparent 30%);
+  /*transform: scale(0.35, 0.35);*/
+  margin: inherit;
+}
+
+.head{
+	z-index: 3;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 2rem;
+	left: -9rem;
+	transform: rotate(-105deg);
+	
+
+
+
+}	
+
+.face {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 18rem;
+	height: 14rem;
+	background: #e97e8e;
+	border-color: black;
+	border: 0.3rem solid;
+	border-radius: 49% 51% 51% 49% / 65% 65% 35% 35% ;
+	
+
+}
+
+.face:hover
+{
+        background:#ff76aa;
+}
+
+.eyes_nose{
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	
+	
+
+}
+
+.pupil{
+	position: relative;
+	width: 3.4rem;
+	height: 3.4rem;
+	border-radius: 50%;
+	background: black;
+	top: -0.1rem;
+	
+}
+
+#left_eye{
+	width: 3.8rem;
+	height: 3.8rem;
+	border-radius: 49% 51% 27% 73% / 37% 47% 53% 63% ;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #0d7985;
+	
+}
+
+.lights{
+	position: relative;
+	top: -3rem;
+	left: 0rem;
+	transform : rotate(-72deg);
+	
+}
+
+.light1{
+	width: 0.8rem;
+	height: 0.8rem;
+	background: white;
+	border-radius: 50%;
+	
+}
+
+.light2{
+	width: 0.4rem;
+	height: 0.4rem;
+	background: white;
+	border-radius: 50%;
+	
+}
+
+
+#right_eye{
+	width: 3.8rem;
+	height: 3.8rem;
+	border-radius: 49% 51% 27% 73% / 37% 47% 53% 63% ;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #0d7985;
+	
+}
+
+#nose{
+	display: flex ;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+	width: 6rem;
+	height: 5rem;
+	background: #ca1c25;
+	border-radius: 50%;
+	
+}
+
+.nostril{
+	width: 0.8rem;
+	height: 1.4rem;
+	background: black;
+	border-radius: 49% 51% 51% 49% / 50% 52% 48% 50% ;
+	
+}
+
+.cheek{
+	position: relative; 
+	width: 3rem;
+	height: 2rem;
+	background: #e92770;
+	border-radius: 49% 51% 51% 49% / 50% 52% 48% 50% ;
+	transform: rotate(0deg);
+	top: 0.5rem;
+	
+}
+
+#mouth-shut{
+	width: 5rem; /*modulate this value to move the lower jaw*/
+    height: 2rem;
+    border: 0.3rem solid black;
+	border-width: 0.3rem 0px 0.3rem 0.3rem;
+    border-radius: 50% 0 0 50%;
+	transform: rotate(-90deg);
+	border-color: transparent transparent transparent black;
+	animation-name: chewing;
+  	animation-duration: 1.15s;  	
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+}
+
+/* The mouth animation code */
+@keyframes chewing{
+  0% {width: 6rem;}
+  25%{width: 4.5rem;}
+  50% {width: 3rem;}
+  75% {width: 4.5rem;}
+  
+  
+}
+
+/* The ears animation code */
+@keyframes flying_left_ear{
+  0% {transform: rotate(-48deg);}
+  50%{transform: rotate(-29.5deg);}
+  100%{transform: rotate(-11deg);}
+}
+@keyframes flying_right_ear{
+  0% {transform: rotate(-132deg) scale(1, -1);}
+  50%{transform: rotate(-150.5deg) scale(1, -1);}
+  100%{transform: rotate(-169deg) scale(1, -1);}
+}
+@keyframes top_flying{
+  0% {top: 11rem;}
+  50%{top: 9rem;}
+  100%{top: 8rem;}
+}
+
+.bottom{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+
+}
+
+.top{
+	z-index: -1;
+	position: relative;
+	display: flex;
+	left: -0.4rem;
+	animation-name: top_flying;
+  	animation-duration: 2s;  	
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	transform: scale(-1, 1);
+	
+
+}
+.innerear{
+	position: relative;
+	width: 6rem;
+	height: 5rem;
+	background :  #b43c2b;
+	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
+	border-color: black;
+	border: 0.3rem solid;
+	top: 0rem;
+	left: 0.5rem;
+}
+
+#left_ear{
+	width: 9rem;
+	height: 6rem;
+	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #e4acb7;
+	margin-right: 9rem;
+	transform: rotate(-48deg);
+	animation-name: flying_left_ear;
+  	animation-duration: 2s;  	
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+  	
+}
+
+#right_ear{
+	z-index: 2;
+	width: 9rem;
+	height: 6rem;
+	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #e4acb7;
+	animation-name: flying_right_ear;
+  	animation-duration: 2s;  	
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+
+}
+
+.torso{
+	z-index: 0;
+	position: relative;
+	width: 22rem;
+	height: 30rem;
+	border-radius: 56% 44% 52% 48% / 52% 50% 50% 48%       ;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #e97e8e;
+	transform: rotate(101deg);
+	top: 6rem;
+	left: 14rem;
+}
+
+.limbs{
+	z-index: 1;
+	position: relative;
+	transform: rotate(85deg);
+	top: 0rem;
+	left: -5rem;
+	
+}
+
+.leg1{
+	
+	z-index: 2;
+	position: relative;
+	width: 8rem;
+	height: 11rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-98deg);
+	background: #e4acb7;
+		
+}
+
+
+
+.leg2{
+	z-index: 2;
+	position: relative;
+	width: 8rem;
+	height: 11rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-263deg) scale(1,-1);
+	background: #e4acb7;
+	
+}
+
+.leg3{
+	z-index: 1;
+	position: relative;
+	width: 11rem;
+	height: 15rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(94deg) scale(1, -1);
+	background: #e4acb7;
+	margin: 0px;
+	top: -8rem;
+	left: -10rem;
+}
+
+.tail{
+	z-index: 0;
+	position: relative;
+	width: 17rem; 
+    height: 8rem;
+    border: 0.3rem solid black;
+	border-width: 0.6rem 0px 0.6rem 0.6rem;
+    border-radius: 50% 0 0 50%;
+	border-color: transparent transparent transparent black;
+	transform: rotate(-130deg);
+	top:-3.4rem ;
+	left: -29rem;
+
+}	
+
+
+.nail{
+	position: relative;
+	width: 1rem;
+	height: 2rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-169deg);
+	background: #7c5c5f;
+	top: 9.5rem;
+	left: -1rem;
+	
+}
+
+.nail_2{
+	position: relative;
+	width: 1rem;
+	height: 2rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-6deg) scale(1,-1);
+	background: #7c5c5f;
+	top: 7.6rem;
+	left: 0.3rem;
+	
+}
+
+.nail_rear{position: relative;
+	width: 1rem;
+	height: 2rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-178deg);
+	background: #7c5c5f;
+	top: 13.3rem;
+	left: -1rem;
+}
+
+.nail_rear_2{position: relative;
+	width: 1rem;
+	height: 2rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-4deg) scale(1,-1);
+	background: #7c5c5f;
+	top: 11.3rem;
+	left: 0.2rem;
+	
+}

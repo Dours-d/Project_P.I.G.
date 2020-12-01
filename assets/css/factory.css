@@ -1,0 +1,25 @@
+.catBox {
+    /*! box-sizing: border-box; */
+    /*! display: flex; */
+    /*! justify-content: center; */
+    overflow: hidden;
+    background-color: #e2efff;
+    border-radius: 10px;
+    padding-top: 2rem;
+    padding-left: 2.3rem;
+    /*! padding-bottom: 0rem; */
+}
+
+.cattributes {
+    z-index: -1;
+    padding: 25px;
+    background-color: #ededed;
+    border-radius: 10px;
+}
+
+.dnaDiv {
+    position: absolute;
+    left:20px;
+    bottom: 5px;
+
+}
