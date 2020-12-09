@@ -22,13 +22,13 @@ function headColor(color,code) {
 }
 
 function mouthColor(color,code) {
-    $('.inner_ear, .leg1, .leg2, .leg3').css('background', '#' + color)  //This changes the color of the cat
+    $('.leg1, .leg2, .leg3').css('background', '#' + color)  //This changes the color of the cat
     $('#innerearcode').html('code: '+code) //This updates text of the badge next to the slider
     $('#dnamouth').html(code) //This updates the body color part of the DNA that is displayed below the cat
 }
 
 function eyesColor(color,code) {
-    $('#nose').css('background', '#' + color)
+    $('#nose,.inner_ear').css('background', '#' + color)
     $('#nosecode').html('code: '+code)
     $('#dnaeyes').html(code)
 }
