@@ -27,7 +27,17 @@ function mouthColor(color,code) {
     $('#dnamouth').html(code) //This updates the body color part of the DNA that is displayed below the cat
 }
 
+function eyesColor(color,code) {
+    $('#nose').css('background', '#' + color)
+    $('#nosecode').html('code: '+code)
+    $('#dnaeyes').html(code)
+}
 
+function earsColor(color,code) {
+    $('.torso').css('background', '#' + color)
+    $('#torsocode').html('code: '+code)
+    $('#dnaears').html(code)
+}
 
 
 
