@@ -39,26 +39,30 @@ function earsColor(color,code) {
     $('#dnaears').html(code)
 }
 
-function earsColor(color,code) {
-    $('.torso').css('background', '#' + color)
-    $('#torsocode').html('code: '+code)
-    $('#dnaears').html(code)
-}
-
 function positionReflect(num,code) {
-    $('.pupil').css('background', '#' + color)
     $('#reflectcode').html('code: '+code)
     $('#dnareflect').html(num)
     switch (num) {
         case 1:
             normalEyes()
-            $('#eyeName').html('one')
+            $('#positionreflect').html('First')
+            $('.lights').css({'transform': 'rotate(-24deg)'})
             break
         case 2:
+            normalEyes()
+            $('#positionreflect').html('Second')
+            $('.lights').css({'transform': 'rotate(-72deg)'})
+            break
+        case 3:
+            normalEyes()
+            $('#positionreflect').html('Third')
+            $('.lights').css({'transform': 'rotate(214deg)'})
+            break
+
     }
 }
 
-
+// CODE NOT EDITED FURTHER//
 
 //###################################################
 //Functions below will be used later on in the project
