@@ -9,8 +9,8 @@ var defaultDNA = {
     //Cattributes
     "eyesShape" : 1,
     "decorationPattern" : 1,
-    "decorationMidcolor" : 13,
-    "decorationSidescolor" : 13,
+    "decorationMidcolor" : 1,
+    "decorationSidescolor" : 1,
     "animation" :  1,
     "lastNum" :  1
     }
@@ -22,12 +22,12 @@ $( document ).ready(function() {
   $('#dnaeyes').html(defaultDNA.eyesColor);
   $('#dnaears').html(defaultDNA.earsColor);
     
-//   $('#dnashape').html(defaultDNA.eyesShape)
-//   $('#dnadecoration').html(defaultDNA.decorationPattern)
-//   $('#dnadecorationMid').html(defaultDNA.decorationMidcolor)
-//   $('#dnadecorationSides').html(defaultDNA.decorationSidescolor)
-//   $('#dnaanimation').html(defaultDNA.animation)
-//   $('#dnaspecial').html(defaultDNA.lastNum)
+  $('#dnareflect').html(defaultDNA.eyesShape)
+  $('#dnatatoo').html(defaultDNA.decorationPattern)
+  $('#dnaanimnails').html(defaultDNA.decorationMidcolor)
+  $('#dnaanimears').html(defaultDNA.decorationSidescolor)
+  $('#dnaanimmouth').html(defaultDNA.animation)
+  $('#dnaspecial').html(defaultDNA.lastNum)
 
   renderCat(defaultDNA)
 });
@@ -38,11 +38,11 @@ function getDna(){
     dna += $('#dnamouth').html()
     dna += $('#dnaeyes').html()
     dna += $('#dnaears').html()
-    dna += $('#dnashape').html()
-    dna += $('#dnadecoration').html()
-    dna += $('#dnadecorationMid').html()
-    dna += $('#dnadecorationSides').html()
-    dna += $('#dnaanimation').html()
+    dna += $('#dnareflect').html()
+    dna += $('#dnatatoo').html()
+    dna += $('#dnaanimnails').html()
+    dna += $('#dnaanimears').html()
+    dna += $('#dnaanimmouth').html()
     dna += $('#dnaspecial').html()
 
     return parseInt(dna)
@@ -57,6 +57,8 @@ function renderCat(dna){
     $('#eyescolor').val(dna.eyesColor)
     earsColor(colors[dna.earsColor],dna.earsColor)
     $('#earscolor').val(dna.earsColor)
+    positionReflect()
+    $('#positionreflect').val
 }
 
 // Changing cat colors
@@ -72,7 +74,6 @@ $('#eyescolor').change(()=>{
     var colorVal = $('#eyescolor').val()
     eyesColor(colors[colorVal],colorVal)
 })
-
 $('#earscolor').change(()=>{
     var colorVal = $('#earscolor').val()
     earsColor(colors[colorVal],colorVal)

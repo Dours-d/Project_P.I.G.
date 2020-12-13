@@ -39,6 +39,25 @@ function earsColor(color,code) {
     $('#dnaears').html(code)
 }
 
+function earsColor(color,code) {
+    $('.torso').css('background', '#' + color)
+    $('#torsocode').html('code: '+code)
+    $('#dnaears').html(code)
+}
+
+function positionReflect(num,code) {
+    $('.pupil').css('background', '#' + color)
+    $('#reflectcode').html('code: '+code)
+    $('#dnareflect').html(num)
+    switch (num) {
+        case 1:
+            normalEyes()
+            $('#eyeName').html('one')
+            break
+        case 2:
+    }
+}
+
 
 
 //###################################################
