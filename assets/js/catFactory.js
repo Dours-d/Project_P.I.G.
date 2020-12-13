@@ -62,7 +62,7 @@ function positionReflect(num,code) {
     }
 }
 
-// CODE NOT EDITED FURTHER//
+
 
 //###################################################
 //Functions below will be used later on in the project
@@ -89,7 +89,7 @@ function decorationVariation(num) {
 }
 
 async function normalEyes() {
-    await $('.cat__eye').find('span').css('border', 'none')
+    await $('.lights').css({'transform': 'rotate(-72deg)'})
 }
 
 async function normaldecoration() {

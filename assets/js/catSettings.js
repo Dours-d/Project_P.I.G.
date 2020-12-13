@@ -78,7 +78,6 @@ $('#earscolor').change(()=>{
     var colorVal = $('#earscolor').val()
     earsColor(colors[colorVal],colorVal)
 })
-
 $('#positionreflect').change(()=>{                      //also presumadly fake code
     var colorVal = $('#positionreflect').val()          //
     positionReflect(colors[colorVal],colorVal)          //
