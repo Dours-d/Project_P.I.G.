@@ -42,6 +42,7 @@ function earsColor(color,code) {
 function positionReflect(num,code) {
     $('#reflectcode').html('code: '+code)
     $('#dnareflect').html(num)
+    $('.lights').css({'transform': 'rotate(-24deg)'})
     switch (num) {
         case 1:
             normalEyes()
@@ -59,6 +60,25 @@ function positionReflect(num,code) {
             $('.lights').css({'transform': 'rotate(214deg)'})
             break
 
+    }
+}
+
+function tatoo(num) {
+    $('#tatoocode').html('code: '+code)
+    $('#dnatatoo').html(num)
+    switch (num) {
+        case 1:
+            normaldecoration()
+            $('#tatoo').find(div).html()
+            break
+        case 2:
+            normaldecoration()
+            $('#tatoo').find(div).html('class="eth"')
+            break
+        case 3:
+            normaldecoration()
+            $('#tatoo').find(div).html('class="btc"')
+            break
     }
 }
 
@@ -95,7 +115,5 @@ async function normalEyes() {
 async function normaldecoration() {
     //Remove all style from other decorations
     //In this way we can also use normalDecoration() to reset the decoration style
-    $('.cat__head-dots').css({ "transform": "rotate(0deg)", "height": "48px", "width": "14px", "top": "1px", "border-radius": "0 0 50% 50%" })
-    $('.cat__head-dots_first').css({ "transform": "rotate(0deg)", "height": "35px", "width": "14px", "top": "1px", "border-radius": "50% 0 50% 50%" })
-    $('.cat__head-dots_second').css({ "transform": "rotate(0deg)", "height": "35px", "width": "14px", "top": "1px", "border-radius": "0 50% 50% 50%" })
+    $('#tatoo').find(div).html()
 }

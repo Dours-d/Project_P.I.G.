@@ -7,7 +7,7 @@ var defaultDNA = {
     "eyesColor" : 30,
     "earsColor" : 73,
     //Cattributes
-    "eyesShape" : 2,
+    "eyesShape" : 1,
     "decorationPattern" : 1,
     "decorationMidcolor" : 1,
     "decorationSidescolor" : 1,
@@ -57,8 +57,10 @@ function renderCat(dna){
     $('#eyescolor').val(dna.eyesColor)
     earsColor(colors[dna.earsColor],dna.earsColor)
     $('#earscolor').val(dna.earsColor)
-    positionReflect(colors[dna.positionReflect, dna.positionReflect]) //fake code not working
-    $('#positionreflect').val(dna.positionReflect)                    //or working
+    positionReflect(colors[dna.positionReflect], dna.positionReflect) //fake code not working
+    $('#positionreflect').val(dna.positionReflect)  
+    tatooChoice(colors[dna.tatooChoice],dna.tatooChoice)
+    $('#tatoochoice').val(dna.tatoochoice)                  //or working
 }
 
 // Changing cat colors
@@ -81,4 +83,8 @@ $('#earscolor').change(()=>{
 $('#positionreflect').change(()=>{                      //also presumadly fake code
     var colorVal = $('#positionreflect').val()          //
     positionReflect(colors[colorVal],colorVal)          //
+})
+$('#tatoochoice').change(()=>{
+    var colorVal = $('#tatoochoice').val()
+    tatooChoice(colors[colorVal],colorVal)
 })
