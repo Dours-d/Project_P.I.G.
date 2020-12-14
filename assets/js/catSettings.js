@@ -57,10 +57,10 @@ function renderCat(dna){
     $('#eyescolor').val(dna.eyesColor)
     earsColor(colors[dna.earsColor],dna.earsColor)
     $('#earscolor').val(dna.earsColor)
-    positionReflect(colors[dna.positionReflect], dna.positionReflect) //fake code not working
+    positionReflect(colors[dna.positionReflect], dna.positionReflect) 
     $('#positionreflect').val(dna.positionReflect)  
     tatooChoice(colors[dna.tatooChoice],dna.tatooChoice)
-    $('#tatoochoice').val(dna.tatoochoice)                  //or working
+    $('#tatoochoice').val(dna.tatooChoice)                  
 }
 
 // Changing cat colors
@@ -80,9 +80,9 @@ $('#earscolor').change(()=>{
     var colorVal = $('#earscolor').val()
     earsColor(colors[colorVal],colorVal)
 })
-$('#positionreflect').change(()=>{                      //also presumadly fake code
-    var colorVal = $('#positionreflect').val()          //
-    positionReflect(colors[colorVal],colorVal)          //
+$('#positionreflect').change(()=>{                      
+    var colorVal = $('#positionreflect').val()          
+    positionReflect(colors[colorVal],colorVal)         
 })
 $('#tatoochoice').change(()=>{
     var colorVal = $('#tatoochoice').val()

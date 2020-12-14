@@ -63,7 +63,7 @@ function positionReflect(num,code) {
     }
 }
 
-function tatoo(num) {
+function tatooChoice(num,code) {
     $('#tatoocode').html('code: '+code)
     $('#dnatatoo').html(num)
     switch (num) {
