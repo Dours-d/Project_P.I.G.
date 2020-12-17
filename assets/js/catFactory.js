@@ -69,7 +69,7 @@ function tatooChoice(num,code) {
     switch (num) {
         case 1:
             normaldecoration()
-            $('#tatoo').find(div).html()
+            $('#tatoo').find(div).html('class="eth"')
             break
         case 2:
             normaldecoration()
