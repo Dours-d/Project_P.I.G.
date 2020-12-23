@@ -195,6 +195,18 @@
   
 }
 
+/*@keyframes nailing {
+  from {top: 10rem;}
+  to {top: 9rem;}*/
+
+#nail{
+	animation-name: nailing;
+	animation-duration: 1.15s;  	
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+}
+
+
 /* The ears animation code */
 @keyframes flying_left_ear{
   0% {transform: rotate(-48deg);}
@@ -381,6 +393,8 @@
 	left: 0.3rem;
 	
 }
+
+
 
 .nail_rear{position: relative;
 	width: 1rem;

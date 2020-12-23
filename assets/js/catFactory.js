@@ -42,22 +42,22 @@ function earsColor(color,code) {
 function positionReflect(num,code) {
     $('#reflectcode').html('code: '+code)
     $('#dnareflect').html(num)
-    $('.lights').css({'transform': 'rotate(-24deg)'})
+    $('.lights').css({'transform','rotate(-24deg)'})
     switch (num) {
         case 1:
             normalEyes()
             $('#positionreflect').html('First')
-            $('.lights').css({'transform': 'rotate(-24deg)'})
+            $('.lights').css({'transform','rotate(-24deg)'})
             break
         case 2:
             normalEyes()
             $('#positionreflect').html('Second')
-            $('.lights').css({'transform': 'rotate(-72deg)'})
+            $('.lights').css({'transform','rotate(-72deg)'})
             break
         case 3:
             normalEyes()
             $('#positionreflect').html('Third')
-            $('.lights').css({'transform': 'rotate(214deg)'})
+            $('.lights').css({'transform','rotate(214deg)'})
             break
 
     }
@@ -81,7 +81,48 @@ function tatooChoice(num,code) {
             break
     }
 }
+function animatedNails(num,code){
+    $('#nailscode').html('code: '+code)
+    $('#dnaanimatednails').html(num)
+    switch (num) {
+        case 1:
+        break
+        case 2:
+        break
 
+    }    
+}
+function animatedEars(num,code){
+    $('#earscode').html('code: '+code)
+    $('#dnaanimatedears').html(num)
+    switch (num) {
+        case 1: 
+            $('#right_ear').css({'animation-name','flying_right_ear'})
+            $('#left_ear')css({'animation-name','flying_left_ear'})
+            break
+        case 2:
+            $('.top')css({'animation-name','top_flying'})
+            break
+        case 3:
+            $('#right_ear').css({'animation-name','flying_right_ear'})
+            $('#left_ear')css({'animation-name','flying_left_ear'})
+            $('.top')css({'animation-name','top_flying'})
+        break
+    }
+}
+
+function animatedMouth(num,code){
+    $('#mouthcode').html('code: '+code)
+    $('#dnaanimatedmouth').html(num)
+    switch (num) {
+        case 1:
+            $('.top')css({'animation-name','chewing'})
+        break
+        case 2:
+        break
+
+    }    
+}
 
 
 //###################################################
