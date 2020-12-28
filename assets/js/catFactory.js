@@ -86,8 +86,10 @@ function animatedNails(num,code){
     $('#dnaanimatednails').html(num)
     switch (num) {
         case 1:
+            $('#finger').css('animation-name','nailing')
         break
         case 2:
+            $('#finger').css('animation-name','')
         break
 
     }    
@@ -119,6 +121,7 @@ function animatedMouth(num,code){
             $('.top')css({'animation-name','chewing'})
         break
         case 2:
+            $('.top')css({'animation-name',''})
         break
 
     }    
