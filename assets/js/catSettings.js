@@ -1,13 +1,12 @@
-
-var colors = Object.values(allColors())
-
+var colors = Object.values(allColors());
+console.log(colors)
 var defaultDNA = {
-    "headColor" : 31,
-    "mouthColor" : 49,
-    "eyesColor" : 30,
-    "earsColor" : 73,
+    "faceearsColor" : 31,
+    "legsColor" : 49,
+    "noseinnerearsColor" : 30,
+    "torsoColor" : 73,
     //Cattributes
-    "eyesShape" : 1,
+    "positionReflect" : 1,
     "decorationPattern" : 1,
     "decorationMidcolor" : 1,
     "decorationSidescolor" : 1,
@@ -17,27 +16,28 @@ var defaultDNA = {
 
 // when page load
 $( document ).ready(function() {
-  $('#dnabody').html(defaultDNA.headColor);
-  $('#dnamouth').html(defaultDNA.mouthColor);
-  $('#dnaeyes').html(defaultDNA.eyesColor);
-  $('#dnaears').html(defaultDNA.earsColor);
+  $('#dnafaceears').html(defaultDNA.faceearsColor);
+  $('#dnalegs').html(defaultDNA.legsColor);
+  $('#dnanoseinnerears').html(defaultDNA.noseinnerearsColor);
+  $('#dnatorso').html(defaultDNA.torsoColor);
     
-  $('#dnareflect').html(defaultDNA.eyesShape)
+  $('#dnareflect').html(defaultDNA.positionReflect)
   $('#dnatatoo').html(defaultDNA.decorationPattern)
   $('#dnaanimatednails').html(defaultDNA.decorationMidcolor)
   $('#dnaanimatedears').html(defaultDNA.decorationSidescolor)
   $('#dnaanimatedmouth').html(defaultDNA.animation)
   $('#dnaspecial').html(defaultDNA.lastNum)
 
-  renderCat(defaultDNA)
+  renderCat(defaultDNA) //edited out by Dani
+
 });
 
 function getDna(){
     var dna = ''
-    dna += $('#dnabody').html()
-    dna += $('#dnamouth').html()
-    dna += $('#dnaeyes').html()
-    dna += $('#dnaears').html()
+    dna += $('#dnafaceears').html()
+    dna += $('#dnalegs').html()
+    dna += $('#dnanoseinnerears').html()
+    dna += $('#dnatorso').html()
     dna += $('#dnareflect').html()
     dna += $('#dnatatoo').html()
     dna += $('#dnaanimatednails').html()
@@ -48,43 +48,51 @@ function getDna(){
     return parseInt(dna)
 }
 
-function renderCat(dna){
-    headColor(colors[dna.headColor],dna.headColor)
-    $('#bodycolor').val(dna.headColor)
-    mouthColor(colors[dna.mouthColor],dna.mouthColor)
-    $('#mouthcolor').val(dna.mouthColor)
-    eyesColor(colors[dna.eyesColor],dna.eyesColor)
-    $('#eyescolor').val(dna.eyesColor)
-    earsColor(colors[dna.earsColor],dna.earsColor)
-    $('#earscolor').val(dna.earsColor)
+function renderCat(dna){                                            
+    faceearsColor(colors[dna.faceearsColor],dna.faceearsColor)      
+    $('#faceearscolor').val(dna.faceearsColor)                      
+                                                            
+    legsColor(colors[dna.legsColor],dna.legsColor)       
+    $('#legscolor').val(dna.legsColor)
+    
+    noseinnerearsColor(colors[dna.noseinnerearsColor],dna.noseinnerearsColor)
+    $('#noseinnerearscolor').val(dna.noseinnerearsColor)
+    
+    torsoColor(colors[dna.torsoColor],dna.torsoColor)
+    $('#torsocolor').val(dna.torsoColor)
+    
     positionReflect(colors[dna.positionReflect], dna.positionReflect) 
     $('#positionreflect').val(dna.positionReflect)  
+    
     tatooChoice(colors[dna.tatooChoice],dna.tatooChoice)
     $('#tatoochoice').val(dna.tatooChoice) 
-    animatedNails(colors[dna.animatedNails],dna.animatedNails)
+    
+    animatedNails(dna.animatedNails)
     $('#animatednails').val(dna.animatedNails)
-    animatedEars(colors[dna.animatedEars],dna.animatedEars)
-    $('#animatedears').val(dna.animatedEars)  
-    animatedMouth(colors[dna.animatedMouth],dna.animatedMouth)
+    
+    animatedEars(dna.animatedEars)
+    $('#animatedears').val(dna.animatedEars)                
+                                                            
+    animatedMouth(dna.animatedMouth)                        
     $('#animatedmouth').val(dna.animatedMouth)               
-}
+}                                                           
 
 // Changing cat colors
-$('#bodycolor').change(()=>{
-    var colorVal = $('#bodycolor').val()
-    headColor(colors[colorVal],colorVal)
+$('#faceearscolor').change(()=>{
+    var colorVal = $('#faceearscolor').val();
+    faceearsColor(colors[colorVal],colorVal);
 })
-$('#mouthcolor').change(()=>{
-    var colorVal = $('#mouthcolor').val() 
-    mouthColor(colors[colorVal],colorVal)
+$('#legscolor').change(()=>{
+    var colorVal = $('#legscolor').val() 
+    legsColor(colors[colorVal],colorVal)
 })
-$('#eyescolor').change(()=>{
-    var colorVal = $('#eyescolor').val()
-    eyesColor(colors[colorVal],colorVal)
+$('#noseinnerearscolor').change(()=>{
+    var colorVal = $('#noseinnerearscolor').val()
+    noseinnerearsColor(colors[colorVal],colorVal)
 })
-$('#earscolor').change(()=>{
-    var colorVal = $('#earscolor').val()
-    earsColor(colors[colorVal],colorVal)
+$('#torsocolor').change(()=>{
+    var colorVal = $('#torsocolor').val()
+    torsoColor(colors[colorVal],colorVal)
 })
 $('#positionreflect').change(()=>{                      
     var colorVal = $('#positionreflect').val()          

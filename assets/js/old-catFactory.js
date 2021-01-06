@@ -1,42 +1,8 @@
 
-$(document).ready(function(){
-    $('#default').click(function(){
-        renderCat(defaultDNA)
-    })
-    $('#random').click(function(){
-        var dna ='' 
-        dna += getRandom1_98()
-        dna += getRandom1_98()
-        dna += getRandom1_98()
-        dna += getRandom1_98()
-        dna += getRandom1_3()
-        dna += getRandom1_3()
-        dna += getRandom1_2()
-        dna += getRandom1_3()
-        dna += getRandom1_2()
-        
-        renderCat(dna)    
-    })
-    })
-
 //Random color
 function getColor() {
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     return randomColor
-}
-
-function getRandom1_98(){
-    var randomNumber1_98 = Math.floor(Math.random()*87)+10
-    return randomNumber1_98
-}
-
-function getRandom1_3(){
-    var randomNumber1_3 = Math.floor(Math.random()*3)+1
-}
-
-function getRandom1_2(){
-    var randomNumber1_2 = Math.floor(Math.random()*2)+1
-    return randomNumber1_2
 }
 
 function genColors(){
@@ -49,53 +15,53 @@ function genColors(){
 }
 
 //This function code needs to modified so that it works with Your cat code.
-function faceearsColor(color,code) {
+function headColor(color,code) {
     $('.face, #left_ear, #right_ear').css('background', '#' + color)  //This changes the color of the cat
-    $('#faceearscode').html('code: '+code) //This updates text of the badge next to the slider
-    $('#dnafaceears').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#headcode').html('code: '+code) //This updates text of the badge next to the slider
+    $('#dnabody').html(code) //This updates the body color part of the DNA that is displayed below the cat
 }
 
-function legsColor(color,code) {
+function mouthColor(color,code) {
     $('.leg1, .leg2, .leg3').css('background', '#' + color)  //This changes the color of the cat
-    $('#legscode').html('code: '+code) //This updates text of the badge next to the slider
-    $('#dnalegs').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#innerearcode').html('code: '+code) //This updates text of the badge next to the slider
+    $('#dnamouth').html(code) //This updates the body color part of the DNA that is displayed below the cat
 }
 
-function noseinnerearsColor(color,code) {
+function eyesColor(color,code) {
     $('#nose,.inner_ear').css('background', '#' + color)
-    $('#noseinnerearscode').html('code: '+code)
-    $('#dnanoseinnerears').html(code)
+    $('#nosecode').html('code: '+code)
+    $('#dnaeyes').html(code)
 }
 
-function torsoColor(color,code) {
+function earsColor(color,code) {
     $('.torso').css('background', '#' + color)
     $('#torsocode').html('code: '+code)
-    $('#dnatorso').html(code)
+    $('#dnaears').html(code)
 }
 
-/*function positionReflect(num,code) {
+function positionReflect(num,code) {
     $('#reflectcode').html('code: '+code)
     $('#dnareflect').html(num)
     $('.lights').css({'transform','rotate(-24deg)'})
     switch (num) {
-         case 1:
-             normalEyes()
-             $('#positionreflect').html('')
-             $('.lights').css({'transform','rotate(-24deg)'})
-             break
-         case 2:
-             normalEyes()
-             $('#positionreflect').html('')
-             $('.lights').css({'transform','rotate(-72deg)'})
-             break
-         case 3:
-             normalEyes()
-             $('#positionreflect').html('')
-             $('.lights').css({'transform','rotate(214deg)'})
-             break
+        case 1:
+            normalEyes()
+            $('#positionreflect').html('First')
+            $('.lights').css({'transform','rotate(-24deg)'})
+            break
+        case 2:
+            normalEyes()
+            $('#positionreflect').html('Second')
+            $('.lights').css({'transform','rotate(-72deg)'})
+            break
+        case 3:
+            normalEyes()
+            $('#positionreflect').html('Third')
+            $('.lights').css({'transform','rotate(214deg)'})
+            break
 
-     }
-}*/
+    }
+}
 
 function tatooChoice(num,code) {
     $('#tatoocode').html('code: '+code)
@@ -103,7 +69,7 @@ function tatooChoice(num,code) {
     switch (num) {
         case 1:
             normaldecoration()
-            $('#tatoo').find(div).html('class="none"')
+            $('#tatoo').find(div).html('class="eth"')
             break
         case 2:
             normaldecoration()
@@ -133,16 +99,16 @@ function animatedEars(num,code){
     $('#dnaanimatedears').html(num)
     switch (num) {
         case 1: 
-            $('#right_ear').css('animation-name','flying_right_ear')
-            $('#left_ear').css('animation-name','flying_left_ear')
+            $('#right_ear').css({'animation-name','flying_right_ear'})
+            $('#left_ear')css({'animation-name','flying_left_ear'})
             break
         case 2:
-            $('.top').css('animation-name','top_flying')
+            $('.top')css({'animation-name','top_flying'})
             break
         case 3:
-            $('#right_ear').css('animation-name','flying_right_ear')
-            $('#left_ear').css('animation-name','flying_left_ear')
-            $('.top').css('animation-name','top_flying')
+            $('#right_ear').css({'animation-name','flying_right_ear'})
+            $('#left_ear')css({'animation-name','flying_left_ear'})
+            $('.top')css({'animation-name','top_flying'})
         break
     }
 }
@@ -152,10 +118,10 @@ function animatedMouth(num,code){
     $('#dnaanimatedmouth').html(num)
     switch (num) {
         case 1:
-            $('.top').css('animation-name','chewing')
+            $('.top')css({'animation-name','chewing'})
         break
         case 2:
-            $('.top').css('animation-name','')
+            $('.top')css({'animation-name',''})
         break
 
     }    
