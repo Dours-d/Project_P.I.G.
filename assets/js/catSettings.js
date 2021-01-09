@@ -1,16 +1,16 @@
 var colors = Object.values(allColors());
 console.log(colors)
 var defaultDNA = {
-    "faceearsColor" : 31,
-    "legsColor" : 49,
+    "faceearsColor" : 93,
+    "legsColor" : 56,
     "noseinnerearsColor" : 30,
     "torsoColor" : 73,
     //Cattributes
     "positionReflect" : 1,
-    "decorationPattern" : 1,
-    "decorationMidcolor" : 1,
-    "decorationSidescolor" : 1,
-    "animation" :  1,
+    "tatooChoice" : 1,
+    "animatedNails" : 1,
+    "animatedEars" : 1,
+    "animatedMouth" :  1,
     "lastNum" :  1
     }
 
@@ -22,10 +22,10 @@ $( document ).ready(function() {
   $('#dnatorso').html(defaultDNA.torsoColor);
     
   $('#dnareflect').html(defaultDNA.positionReflect)
-  $('#dnatatoo').html(defaultDNA.decorationPattern)
-  $('#dnaanimatednails').html(defaultDNA.decorationMidcolor)
-  $('#dnaanimatedears').html(defaultDNA.decorationSidescolor)
-  $('#dnaanimatedmouth').html(defaultDNA.animation)
+  $('#dnatatoo').html(defaultDNA.tatooChoice)
+  $('#dnaanimatednails').html(defaultDNA.animatedNails)
+  $('#dnaanimatedears').html(defaultDNA.animatedEars)
+  $('#dnaanimatedmouth').html(defaultDNA.animatedMouth)
   $('#dnaspecial').html(defaultDNA.lastNum)
 
   renderCat(defaultDNA) //edited out by Dani
@@ -33,7 +33,7 @@ $( document ).ready(function() {
 });
 
 function getDna(){
-    var dna = ''
+    var dna = {}
     dna += $('#dnafaceears').html()
     dna += $('#dnalegs').html()
     dna += $('#dnanoseinnerears').html()
@@ -61,10 +61,10 @@ function renderCat(dna){
     torsoColor(colors[dna.torsoColor],dna.torsoColor)
     $('#torsocolor').val(dna.torsoColor)
     
-    positionReflect(colors[dna.positionReflect], dna.positionReflect) 
+    positionReflect(dna.positionReflect) 
     $('#positionreflect').val(dna.positionReflect)  
     
-    tatooChoice(colors[dna.tatooChoice],dna.tatooChoice)
+    tatooChoice(dna.tatooChoice)
     $('#tatoochoice').val(dna.tatooChoice) 
     
     animatedNails(dna.animatedNails)
@@ -96,21 +96,21 @@ $('#torsocolor').change(()=>{
 })
 $('#positionreflect').change(()=>{                      
     var colorVal = $('#positionreflect').val()          
-    positionReflect(colors[colorVal],colorVal)         
+    positionReflect(colorVal)         
 })
 $('#tatoochoice').change(()=>{
     var colorVal = $('#tatoochoice').val()
-    tatooChoice(colors[colorVal],colorVal)
+    tatooChoice(colorVal)
 })
 $('#animatednails').change(()=>{
     var colorVal = $('#animatednails').val()
-    animatedNails(colors[colorVal],colorVal)                      
+    animatedNails(colorVal)                      
 })
 $('#animatedears').change(()=>{
     var colorVal = $('#animatedears').val()
-    animatedEars(colors[colorVal],colorVal)
+    animatedEars(colorVal)
 })
 $('#animatedmouth').change(()=>{
     var colorVal = $('animatedmouth').val()
-    animatedMouth(colors[colorVal],colorVal)
+    animatedMouth(colorVal)
 })

@@ -179,8 +179,7 @@
     border-radius: 50% 0 0 50%;
 	transform: rotate(-90deg);
 	border-color: transparent transparent transparent black;
-	animation-name: chewing;
-  	animation-duration: 1.15s;  	
+	animation-duration: 1.15s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
 }
@@ -213,7 +212,6 @@
 	top: 9.8rem;
 	left: -1rem;
 
-	animation-name: nailing;
 	animation-duration: 1.15s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
@@ -250,8 +248,7 @@
 	position: relative;
 	display: flex;
 	left: -0.4rem;
-	animation-name: top_flying;
-  	animation-duration: 2s;  	
+	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
   	transform: scale(-1, 1);
@@ -279,8 +276,7 @@
 	background: #e4acb7;
 	margin-right: 9rem;
 	transform: rotate(-48deg);
-	animation-name: flying_left_ear;
-  	animation-duration: 2s;  	
+	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
   	
@@ -294,8 +290,7 @@
 	border-color: black;
 	border: 0.3rem solid;
 	background: #e4acb7;
-	animation-name: flying_right_ear;
-  	animation-duration: 2s;  	
+	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
 
