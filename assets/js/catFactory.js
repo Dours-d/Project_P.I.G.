@@ -1,25 +1,16 @@
 
 $(document).ready(function(){
+    getDefault_dna()
     $('#default').click(function(){
-        renderCat(defaultDNA)
+    getDefault_dna()
     })
     $('#random').click(function(){
-        var dna = { 
-        "faceearsColor" : getRandom1_98(),
-        "legsColor" : getRandom1_98(),
-        "noseinnerearsColor" : getRandom1_98(),
-        "torsoColor" : getRandom1_98(),
-        "positionReflect" : getRandom1_3(),
-        "tatooChoice" : getRandom1_3(),
-        "animatedNails" : getRandom1_2(),
-        "animatedEars" : getRandom1_4(),
-        "animatedMouth" : getRandom1_2(),
-        "lastNum" : 1
-         }
-        renderCat(dna)
+    getRandom_dna()
     })
+})
 
-    $('#create').click(function(){})
+
+    /*$('#create').click(function(){})*/
 
 //Random colors          OBSOLETE      
 /*function getColor() {
@@ -57,7 +48,7 @@ function getRandom1_2(){
 }*/
 
 //This function code needs to modified so that it works with Your cat code.
-function faceearsColor(color,code) {
+function faceearsColor(color,code){
     $('.face, #left_ear, #right_ear').css('background', '#' + color)  //This changes the color of the cat
     $('#faceearscode').html('code: '+code) //This updates text of the badge next to the slider
     $('#dnafaceears').html(code) //This updates the body color part of the DNA that is displayed below the cat
@@ -85,15 +76,15 @@ function positionReflect(num) {
     switch (num) {
          case 1:
              normalEyes()
-             $('.lights').css('transform','rotate(-24deg)')
+             $('#lights','#lightsbis').addClass('lights1')
              break
          case 2:
              normalEyes()
-             $('.lights').css('transform','rotate(-72deg)')
+             $('#lights','#lightsbis').addClass('lights2')
              break
          case 3:
              normalEyes()
-             $('.lights').css({'transform','rotate(214deg)'})
+             $('#lights','#lightsbis').addClass('lights3')
              break
     }
     $('#reflectcode').html('code: '+num)
@@ -107,16 +98,17 @@ function tatooChoice(num) {
             break
         case 2:
             normalSkin()
-            $('#tatoo').find(div).html('class="eth"')
+            $('#tatoo').addClass('eth').removeClass('btc')
             break
         case 3:
             normalSkin()
-            $('#tatoo').find(div).html('class="btc"')
+            $('#tatoo').addClass('btc').removeClass('eth')
             break
     }
     $('#tatoocode').html('code: '+num)
     $('#dnatatoo').html(num)
 }
+
 function animatedNails(num){
     switch (num) {
         case 1:
@@ -124,12 +116,13 @@ function animatedNails(num){
             break
         case 2:
             normalNails()
-            $('#finger').css('animation-name','nailing')
+            $('#finger').addClass('anifinger').removeClass('imfinger')
             break
     }    
     $('#nailscode').html('code: '+num)
     $('#dnaanimatednails').html(num)
 }
+
 function animatedEars(num){
     switch (num) {
         
@@ -138,18 +131,18 @@ function animatedEars(num){
             break
         case 2: 
             normalEars()
-            $('#right_ear').css('animation-name','flying_right_ear')
-            $('#left_ear').css('animation-name','flying_left_ear')
+            $('#right_ear').addClass('aniright').removeClass('imright')
+            $('#left_ear').addClass('anileft').removeClass('imleft')
             break
         case 3:
             normalEars()
-            $('.top').css('animation-name','top_flying')
+            $('.top').addClass('anitop').removeClass('imtop')
             break
         case 4:
             normalEars()
-            $('#right_ear').css('animation-name','flying_right_ear')
-            $('#left_ear').css('animation-name','flying_left_ear')
-            $('.top').css('animation-name','top_flying')
+            $('#right_ear').addClass('aniright').removeClass('imright')
+            $('#left_ear').addClass('anileft').removeClass('imleft')
+            $('#top').addClass('anitop').removeClass('imtop')
             break
     }
     $('#earscode').html('code: '+num)
@@ -163,7 +156,7 @@ function animatedMouth(num){
             break
         case 2:
             normalMouth()
-            $('#mouth-shut').css('animation-name','chewing')
+            $('#mouth').addClass('animouth').removeClass('immouth')
             break
 
     }
@@ -172,24 +165,25 @@ function animatedMouth(num){
 }
 
 async function normalEyes(){
-    await $('.lights').css({'transform': 'rotate(-72deg)'})
+    await $('#lights','#lightsbis').removeClass('lights1','lights2','lights3')
 }
 
 async function normalSkin(){
     //Remove all style from other decorations
     //In this way we can also use normalDecoration() to reset the decoration style
-    await $('#tatoo').find(div).html()
+    await $('#tatoo').removeClass('eth','btc')
+}
 
 async function normalNails(){
-    await $('#finger').css('animation-name':'')
+    await $('#finger').removeClass('anifinger').addClass('imfinger')
 }   
 
 async function normalEars(){
-    await $('#right_ear').css('animation-name','')
-    await $('#left_ear').css('animation-name','')
-    await $('.top').css('animation-name','')
+    await $('#right_ear').removeClass('aniright').addClass('imright')
+    await $('#left_ear').removeClass('anileft').addClass('imleft')
+    await $('#top').removeClass('anitop').addClass('imtop')
 }
 
 async function normalMouth(){
-    $('#mouth-shut').css('animation-name','')
+    $('#mouth').removeClass('animouth').addClass('immouth')
 }

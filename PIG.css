@@ -104,12 +104,25 @@
 	
 }
 
-.lights{
+.lights1{
+	position: relative;
+	top: -3rem;
+	left: 0rem;
+	transform : rotate(-24deg);
+}
+
+.lights2{
 	position: relative;
 	top: -3rem;
 	left: 0rem;
 	transform : rotate(-72deg);
-	
+}
+
+.lights3{
+	position: relative;
+	top: -3rem;
+	left: 0rem;
+	transform : rotate(214deg);
 }
 
 .light1{
@@ -171,7 +184,7 @@
 	
 }
 
-#mouth-shut{
+.immouth{
 	width: 5rem; /*modulate this value to move the lower jaw*/
     height: 2rem;
     border: 0.3rem solid black;
@@ -179,7 +192,18 @@
     border-radius: 50% 0 0 50%;
 	transform: rotate(-90deg);
 	border-color: transparent transparent transparent black;
-	animation-duration: 1.15s;  	
+}
+
+.animouth{
+	width: 5rem; /*modulate this value to move the lower jaw*/
+    height: 2rem;
+    border: 0.3rem solid black;
+	border-width: 0.3rem 0px 0.3rem 0.3rem;
+    border-radius: 50% 0 0 50%;
+	transform: rotate(-90deg);
+	border-color: transparent transparent transparent black;
+	animation-name: chewing;
+	animation-duration 1.15s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
 }
@@ -190,8 +214,6 @@
   25%{width: 4.5rem;}
   50% {width: 3rem;}
   75% {width: 4.5rem;}
-  
-  
 }
 
 
@@ -201,7 +223,7 @@
 }
 
 
-.finger{
+.imfinger{
 	position: relative;
 	width: 1rem;
 	height: 2rem;
@@ -211,7 +233,19 @@
 	background: #7c5c5f;
 	top: 9.8rem;
 	left: -1rem;
+}
 
+.anifinger{
+	position: relative;
+	width: 1rem;
+	height: 2rem;
+	border-style: solid;
+	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
+	transform: rotate(-169deg);
+	background: #7c5c5f;
+	top: 9.8rem;
+	left: -1rem;
+	animation-name: nailing;
 	animation-duration: 1.15s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
@@ -243,17 +277,24 @@
 
 }
 
-.top{
+.imtop{
 	z-index: -1;
 	position: relative;
 	display: flex;
 	left: -0.4rem;
+	top: 7rem;
+}
+
+.anitop{
+	z-index: -1;
+	position: relative;
+	display: flex;
+	left: -0.4rem;
+	top: 7rem;
+	animation-name: top_flying;
 	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
-  	transform: scale(-1, 1);
-	
-
 }
 .inner_ear{
 	position: relative;
@@ -267,7 +308,7 @@
 	left: 0.5rem;
 }
 
-#left_ear{
+.imleft{
 	width: 9rem;
 	height: 6rem;
 	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
@@ -275,14 +316,25 @@
 	border: 0.3rem solid;
 	background: #e4acb7;
 	margin-right: 9rem;
-	transform: rotate(-48deg);
+}
+
+
+
+.anileft{
+	width: 9rem;
+	height: 6rem;
+	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #e4acb7;
+	margin-right: 9rem;
+	animation-name: flying_left_ear;
 	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
-  	
 }
 
-#right_ear{
+.imright{
 	z-index: 2;
 	width: 9rem;
 	height: 6rem;
@@ -290,10 +342,22 @@
 	border-color: black;
 	border: 0.3rem solid;
 	background: #e4acb7;
+	transform: scale(-1, 1);
+}
+
+.aniright{
+	z-index: 2;
+	width: 9rem;
+	height: 6rem;
+	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #e4acb7;
+	transform: scale(-1, 1);
+	animation-name: flying_right_ear;
 	animation-duration: 2s;  	
   	animation-iteration-count: infinite;
   	animation-timing-function: linear;
-
 }
 
 .torso{
