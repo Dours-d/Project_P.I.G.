@@ -101,27 +101,32 @@
 	border-color: black;
 	border: 0.3rem solid;
 	background: #0d7985;
-	
+}
+
+#right_eye{
+	width: 3.8rem;
+	height: 3.8rem;
+	border-radius: 49% 51% 27% 73% / 37% 47% 53% 63% ;
+	border-color: black;
+	border: 0.3rem solid;
+	background: #0d7985;
+}
+
+.lights {
+	position: relative;
+	top: 1rem;
+	left: 0rem;
 }
 
 .lights1{
-	position: relative;
-	top: -3rem;
-	left: 0rem;
 	transform : rotate(-24deg);
 }
 
 .lights2{
-	position: relative;
-	top: -3rem;
-	left: 0rem;
 	transform : rotate(-72deg);
 }
 
 .lights3{
-	position: relative;
-	top: -3rem;
-	left: 0rem;
 	transform : rotate(214deg);
 }
 
@@ -141,16 +146,6 @@
 	
 }
 
-
-#right_eye{
-	width: 3.8rem;
-	height: 3.8rem;
-	border-radius: 49% 51% 27% 73% / 37% 47% 53% 63% ;
-	border-color: black;
-	border: 0.3rem solid;
-	background: #0d7985;
-	
-}
 
 #nose{
 	display: flex ;

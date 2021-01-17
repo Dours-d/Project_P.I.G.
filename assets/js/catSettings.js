@@ -34,6 +34,7 @@ function getRandom_dna(){
     }
     console.log(dna)
     renderCat(dna)
+    print_dna(dna)
     return dna
 }
 
@@ -53,7 +54,7 @@ function getRandom_dna(){
 
 
 
-/*
+
 function print_dna(){ 
     dna += $('#dnafaceears').html()
     dna += $('#dnalegs').html()
@@ -67,7 +68,7 @@ function print_dna(){
     dna += $('#dnaspecial').html()
 
     return parseInt(dna)
-}*/
+}
 
 function renderCat(dna){                                            
     faceearsColor(colors[dna.faceearsColor],dna.faceearsColor)      
@@ -132,6 +133,6 @@ $('#animatedears').change(()=>{
     animatedEars(colorVal)
 })
 $('#animatedmouth').change(()=>{
-    var colorVal = $('animatedmouth').val()
+    var colorVal = $('#animatedmouth').val()
     animatedMouth(colorVal)
 })
