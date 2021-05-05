@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/colors.css">
   <link rel="stylesheet" href="assets/css/factory.css">
   <link rel="stylesheet" href="assets/css/frontend.css">
+  <link rel="stylesheet" type="text/css" href="animations.css">
 </head>
   <body>
       <div class="container p-5" style="margin-top: 12vh;margin-bottom: 10vh;">
@@ -22,6 +23,9 @@
           <p class="c-white">The First Pig Incentivised Gains</p>
           </div>
           <div class="row">
+              
+              <!-- First Box on the left -->
+
               <div class="col-lg-5 catBox m-2 light-b-shadow">
                   <div id='tatoo'></div>
                     <div id="body">
@@ -86,6 +90,8 @@
                             </div>
                         </div>
                     </div>
+                  
+
                   <div class="dnaDiv" id="catDNA">
                       <br>
                           DNA:
@@ -105,23 +111,35 @@
                       </br>
                   </div>
               </div>
+              
+              <!-- Second Box on the right -->
+              
               <div class="col-lg-6 cattributes m-2 light-b-shadow">
-                  <!-- Cat colors -->
+
+                  <!-- Selectors -->
                 <div class="row">
                   <div class="col-sm">
                     <div id="catColors">
+                      
+                      <!--Face and Ear selector -->
                       <div class="form-group">
                           <label for="formControlRange"><b>Face & ears</b><span class="badge badge-dark ml-2" id="faceearscode"></span></label>
                           <input type="range" min="10" max="98" class="form-control-range" id="faceearscolor">
                       </div>
+
+                      <!--Legs selector selector -->
                       <div class="form-group">
                           <label for="formControlRange"><b>Legs</b><span class="badge badge-dark ml-2" id="legscode"></span></label>
                           <input type="range" min="10" max="98" class="form-control-range" id="legscolor">
                       </div>
+
+                      <!--Nose and inner-ears selector -->
                       <div class="form-group">
                           <label for="formControlRange"><b>Nose & inner ears</b><span class="badge badge-dark ml-2" id="noseinnerearscode"></span></label>
                           <input type="range" min="10" max="98" class="form-control-range" id="noseinnerearscolor">
                       </div>
+
+                      <!--Torso selector -->
                       <div class="form-group">
                           <label for="formControlRange"><b>Torso</b><span class="badge badge-dark ml-2" id="torsocode"></span></label>
                           <input type="range" min="10" max="98" class="form-control-range" id="torsocolor">
@@ -129,28 +147,40 @@
                     </div>
                   </div>  
                   <div class="col-sm">
+                    
+                    <!--Position of the Reflect selector -->
                     <div class="form-group">
                         <label for="formControlRange"><b>eyes reflection</b><span class="badge badge-dark ml-2" id="reflectcode"></span></label>
                         <input type="range" min="1" max="3" class="form-control-range" id="positionreflect">
                     </div>
+
+                    <!--Tatoo choice selector -->
                     <div class="form-group">
                         <label for="formControlRange"><b>Tatoo</b><span class="badge badge-dark ml-2" id="tatoocode"></span></label>
                         <input type="range" min="1" max="3" class="form-control-range" id="tatoochoice">
                     </div>
+                    
+                    <!--Nails animation selector -->
                     <div class="form-group">
                         <label for="formControlRange"><b>Animated nails</b><span class="badge badge-dark ml-2" id="nailscode"></span></label>
                         <input type="range" min="1" max="2" class="form-control-range" id="animatednails">
                     </div>
+                    
+                    <!--Ears animation selector -->
                     <div class="form-group">
                         <label for="formControlRange"><b>Animated ears</b><span class="badge badge-dark ml-2" id="earscode"></span></label>
                         <input type="range" min="1" max="4" class="form-control-range" id="animatedears">
                     </div>
+
+                    <!--Mouth animation selector -->
                     <div class="form-group">
                         <label for="formControlRange"><b>Animated mouth</b><span class="badge badge-dark ml-2" id="mouthcode"></span></label>
                         <input type="range" min="1" max="2" class="form-control-range" id="animatedmouth">
                     </div>
+
+                    <!--Special animation selector -->
                     <div class="form-group">
-                        <label for="formControlRange"><b>special</b><span class="badge badge-dark ml-2" id="torsocode"></span></label>
+                        <label for="formControlRange"><b>special</b><span class="badge badge-dark ml-2" id="special"></span></label>
                         <input type="range" min="10" max="98" class="form-control-range" id="lastnum">
                     </div>
                   </div>

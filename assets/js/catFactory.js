@@ -47,17 +47,17 @@ function getRandom1_2(){
     return colors
 }*/
 
-//This function code needs to modified so that it works with Your cat code.
+//Functions that actually do the change.
 function faceearsColor(color,code){
-    $('.face, #left_ear, #right_ear').css('background', '#' + color)  //This changes the color of the cat
+    $('.face, #left_ear, #right_ear').css('background', '#' + color)  //This changes the color of the face  and ears
     $('#faceearscode').html('code: '+code) //This updates text of the badge next to the slider
-    $('#dnafaceears').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#dnafaceears').html(code) //This updates the body color part of the DNA that is displayed below the pig
 }
 
 function legsColor(color,code) {
-    $('.leg1, .leg2, .leg3').css('background', '#' + color)  //This changes the color of the cat
+    $('.leg1, .leg2, .leg3').css('background', '#' + color)  //This changes the color of the legs
     $('#legscode').html('code: '+code) //This updates text of the badge next to the slider
-    $('#dnalegs').html(code) //This updates the body color part of the DNA that is displayed below the cat
+    $('#dnalegs').html(code) //This updates the body color part of the DNA that is displayed below the pig
 }
 
 function noseinnerearsColor(color,code) {
@@ -76,15 +76,15 @@ function positionReflect(num) {
     switch (num) {
          case 1:
              normalEyes()
-             $('#lights','#lightsbis').addClass('lights1')
+             $('#lights','#lightsbis').addClass('lights1').removeClass('lights2','lights3')
              break
          case 2:
              normalEyes()
-             $('#lights','#lightsbis').addClass('lights2')
+             $('#lights','#lightsbis').addClass('lights2').removeClass('lights1', 'lights3')
              break
          case 3:
              normalEyes()
-             $('#lights','#lightsbis').addClass('lights3')
+             $('#lights','#lightsbis').addClass('lights3').removeClass('lights1','lights2')
              break
     }
     $('#reflectcode').html('code: '+num)

@@ -12,7 +12,7 @@ function getDefault_dna(){
         "animatedNails" : 1,
         "animatedEars" : 1,
         "animatedMouth" :  1,
-        "lastNum" :  1
+        "special" :  1
     }
     console.log(dna)
     renderCat(dna)
@@ -30,7 +30,7 @@ function getRandom_dna(){
         "animatedNails" : getRandom1_2(),
         "animatedEars" : getRandom1_4(),
         "animatedMouth" : getRandom1_2(),
-        "lastNum" : 1
+        "special" : 1
     }
     console.log(dna)
     renderCat(dna)
@@ -103,36 +103,37 @@ function renderCat(dna){
 $('#faceearscolor').change(()=>{
     var colorVal = $('#faceearscolor').val();
     faceearsColor(colors[colorVal],colorVal);
+    
 })
 $('#legscolor').change(()=>{
-    var colorVal = $('#legscolor').val() 
-    legsColor(colors[colorVal],colorVal)
+    var colorVal = $('#legscolor').val(); 
+    legsColor(colors[colorVal],colorVal);
 })
 $('#noseinnerearscolor').change(()=>{
-    var colorVal = $('#noseinnerearscolor').val()
-    noseinnerearsColor(colors[colorVal],colorVal)
+    var colorVal = $('#noseinnerearscolor').val();
+    noseinnerearsColor(colors[colorVal],colorVal);
 })
 $('#torsocolor').change(()=>{
-    var colorVal = $('#torsocolor').val()
-    torsoColor(colors[colorVal],colorVal)
+    var colorVal = $('#torsocolor').val();
+    torsoColor(colors[colorVal],colorVal);
 })
 $('#positionreflect').change(()=>{                      
-    var colorVal = $('#positionreflect').val()          
-    positionReflect(colorVal)         
+    var colorVal = $('#positionreflect').val();          
+    positionReflect(colorVal);         
 })
 $('#tatoochoice').change(()=>{
-    var colorVal = $('#tatoochoice').val()
-    tatooChoice(colorVal)
+    var colorVal = $('#tatoochoice').val();
+    tatooChoice(colorVal);
 })
 $('#animatednails').change(()=>{
-    var colorVal = $('#animatednails').val()
-    animatedNails(colorVal)                      
+    var colorVal = $('#animatednails').val();
+    animatedNails(colorVal);                      
 })
 $('#animatedears').change(()=>{
-    var colorVal = $('#animatedears').val()
-    animatedEars(colorVal)
+    var colorVal = $('#animatedears').val();
+    animatedEars(colorVal);
 })
 $('#animatedmouth').change(()=>{
-    var colorVal = $('#animatedmouth').val()
-    animatedMouth(colorVal)
+    var colorVal = $('#animatedmouth').val();
+    animatedMouth(colorVal);
 })

@@ -189,33 +189,6 @@
 	border-color: transparent transparent transparent black;
 }
 
-.animouth{
-	width: 5rem; /*modulate this value to move the lower jaw*/
-    height: 2rem;
-    border: 0.3rem solid black;
-	border-width: 0.3rem 0px 0.3rem 0.3rem;
-    border-radius: 50% 0 0 50%;
-	transform: rotate(-90deg);
-	border-color: transparent transparent transparent black;
-	animation-name: chewing;
-	animation-duration 1.15s;  	
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-}
-
-/* The mouth animation code */
-@keyframes chewing{
-  0% {width: 6rem;}
-  25%{width: 4.5rem;}
-  50% {width: 3rem;}
-  75% {width: 4.5rem;}
-}
-
-
-@keyframes nailing {
-  from {top: 8.8rem;}
-  to {top: 9.8rem;}
-}
 
 
 .imfinger{
@@ -230,46 +203,10 @@
 	left: -1rem;
 }
 
-.anifinger{
-	position: relative;
-	width: 1rem;
-	height: 2rem;
-	border-style: solid;
-	border-radius: 49% 51% 100% 0% / 55% 49% 51% 45% ;
-	transform: rotate(-169deg);
-	background: #7c5c5f;
-	top: 9.8rem;
-	left: -1rem;
-	animation-name: nailing;
-	animation-duration: 1.15s;  	
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-}
-
-
-/* The ears animation code */
-@keyframes flying_left_ear{
-  0% {transform: rotate(-48deg);}
-  50%{transform: rotate(-29.5deg);}
-  100%{transform: rotate(-11deg);}
-}
-@keyframes flying_right_ear{
-  0% {transform: rotate(-132deg) scale(1, -1);}
-  50%{transform: rotate(-150.5deg) scale(1, -1);}
-  100%{transform: rotate(-169deg) scale(1, -1);}
-}
-@keyframes top_flying{
-  0% {top: 11rem;}
-  50%{top: 9rem;}
-  100%{top: 8rem;}
-}
-
 .bottom{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	
-
 }
 
 .imtop{
@@ -280,17 +217,7 @@
 	top: 7rem;
 }
 
-.anitop{
-	z-index: -1;
-	position: relative;
-	display: flex;
-	left: -0.4rem;
-	top: 7rem;
-	animation-name: top_flying;
-	animation-duration: 2s;  	
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-}
+
 .inner_ear{
 	position: relative;
 	width: 6rem;
@@ -315,19 +242,7 @@
 
 
 
-.anileft{
-	width: 9rem;
-	height: 6rem;
-	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
-	border-color: black;
-	border: 0.3rem solid;
-	background: #e4acb7;
-	margin-right: 9rem;
-	animation-name: flying_left_ear;
-	animation-duration: 2s;  	
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-}
+
 
 .imright{
 	z-index: 2;
@@ -340,20 +255,7 @@
 	transform: scale(-1, 1);
 }
 
-.aniright{
-	z-index: 2;
-	width: 9rem;
-	height: 6rem;
-	border-radius: 0% 100% 41% 59% / 0% 28% 72% 100%;
-	border-color: black;
-	border: 0.3rem solid;
-	background: #e4acb7;
-	transform: scale(-1, 1);
-	animation-name: flying_right_ear;
-	animation-duration: 2s;  	
-  	animation-iteration-count: infinite;
-  	animation-timing-function: linear;
-}
+
 
 .torso{
 	z-index: 0;
