@@ -1,13 +1,15 @@
 
 $(document).ready(function(){
-    getDefault_dna()
+    getDefault_dna();
     $('#default').click(function(){
-    getDefault_dna()
+    getDefault_dna();
     })
     $('#random').click(function(){
-    getRandom_dna()
+    getRandom_dna();
     })
 })
+     
+    
 
 
     /*$('#create').click(function(){})*/
