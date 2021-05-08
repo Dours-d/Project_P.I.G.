@@ -1,7 +1,8 @@
+var dna = {};
 var colors = Object.values(allColors());
 console.log(colors)
 $(document).ready(function(){
-    getActuel_dna();
+    getDefault_dna();
 })
 
 function getDefault_dna(){
