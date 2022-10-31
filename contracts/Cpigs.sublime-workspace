@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"a",
+				"address"
+			],
+			[
+				"ge",
+				"genes"
+			],
+			[
+				"d",
+				"dadId"
+			],
+			[
+				"_g",
+				"_genes"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/dours/REPO/Project_P.I.G/Project_P.I.G.",
+		"/home/dours/REPO/Project_P.I.G/Project_P.I.G./contracts"
+	],
+	"file_history":
+	[
+		"/home/dours/REPO/Project_P.I.G/Project_P.I.G./contracts/Piggycontract.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/upgradeability/Proxy.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/upgradeability/Storage.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/upgradeability/Dog.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/! BAD CODE !/Dao Hack/attacker.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/! BAD CODE !/Dao Hack/Fundraiser.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/ERC721 assignment/ERC721.sol",
+		"/home/dours/REPO/Truffle-HardHat-Assignment/contracts/Erc20.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/ERC721 assignment/IERC721.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/erc20 assignment/erc20_assignment.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Exercises/test1-1.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Inheritance assignment/Workers.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Inheritance assignment/Ownable.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Inheritance assignment/People.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Inheritance assignment/Bonus/People.sol",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Inheritance assignment/Bonus/Workers.sol",
+		"/home/dours/REPO/Truffle-HardHat-Assignment/.gitignore",
+		"/home/dours/REPO/HHHH/test/Erc20.js",
+		"/home/dours/REPO/repo/BootCamp_IvanOnTech/Solidity Eth programming/Assingments/Truffle-HardHat-Assigment/test/Erc20.js",
+		"/home/dours/REPO/HHHH/contracts/Erc20.sol",
+		"/home/dours/REPO/HHHH/artifacts/build-info/d566aa2d91ebd6ff46e374973e417d38.json",
+		"/home/dours/REPO/HHHH/archive/Erc20.js",
+		"/home/dours/REPO/HHHH/artifacts/build-info/1c3e5a3cb7dfdd8ac51334bbc2a88a0d.json",
+		"/home/dours/REPO/HHHH/hardhat.config.js",
+		"/home/dours/REPO/Truffle-Assignment/test/1_unit test.js",
+		"/home/dours/REPO/HHHH/scripts/deploy.js",
+		"/home/dours/REPO/HHTUTO/scripts/deploy.js",
+		"/home/dours/REPO/HHTUTO/hardhat.config.js",
+		"/home/dours/REPO/HHH/hardhat.config.js",
+		"/home/dours/REPO/HHH/scripts/deploy.js",
+		"/home/dours/REPO/HH/hardhat.config.js",
+		"/home/dours/REPO/HH/scripts/script.js",
+		"/home/dours/REPO/HHH/contracts/Erc20.sol",
+		"/home/dours/REPO/HH/contracts/Erc20.sol",
+		"/home/dours/REPO/HH/contracts/Ownable.sol",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/packages/hardhat/scripts/deploy.js",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/packages/hardhat/scripts/publish.js",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/packages/hardhat/contracts/Erc20.sol",
+		"/home/dours/REPO/HH/package.json",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/package.json",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/packages/hardhat/scripts/2_myContracts_deploy.js",
+		"/home/dours/REPO/Scaffold-eth/scaffold-eth/packages/hardhat/hardhat.config.js",
+		"/home/dours/Bureau/verification.sol",
+		"/home/dours/REPO/Truffle-Assignment/migrations/2_myContracts_deploy.js",
+		"/home/dours/REPO/Truffle-Assignment/contracts/SafeMath.sol",
+		"/home/dours/REPO/Truffle-Assignment/contracts/Ownable.sol",
+		"/home/dours/REPO/Truffle-Assignment/contracts/Erc20.sol"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/dours/REPO/Project_P.I.G/Project_P.I.G."
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.222537190708,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
